@@ -21,9 +21,9 @@
 
 (reg-event-db
   :say-something
-  (fn [db _]
+  (fn [db [_ value]]
     (.speak js/speechSynthesis
-            (js/SpeechSynthesisUtterance. "This won't come out on mobile"))
+            (js/SpeechSynthesisUtterance. value))
     db))
 
 ;;subscriptions

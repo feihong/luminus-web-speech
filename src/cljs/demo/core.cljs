@@ -39,10 +39,14 @@
   [:div.container
    [:h1 "Web Speech Demo"]
    [:div "This button uses rf/dispatch and doesn't work on mobile Safari, unless you click the bottom button first"]
-   [:button.btn.btn-danger {:on-click #(rf/dispatch [:say-something])}
+   [:button.btn.btn-danger {:on-click #(rf/dispatch [:say-something "This won't work on mobile"])}
                            "Speak using dispatch"]
+   [:div "This button uses rf/dispatch-sync and should work on mobile"]
+   [:button.btn.btn-success {:on-click #(rf/dispatch-sync [:say-something "This works on mobile"])}
+                           "Speak using dispatch-sync"]
    [:div "This button always works because it calls speechSynthesis.speak() directly"]
-   [:button.btn.btn-primary {:on-click #(.speak js/speechSynthesis (js/SpeechSynthesisUtterance. "Speak now or hold your peace"))}
+   [:button.btn.btn-primary {:on-click #(.speak js/speechSynthesis (js/SpeechSynthesisUtterance.
+                                                                    "Speak now or hold your peace"))}
                             "Speak immediately"]])
 
 (def pages

@@ -1,0 +1,84 @@
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.894 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/demo/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.494 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/demo/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.357 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/demo/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.618 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/demo/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/demo/core.cljs   line:42  column:68  ----[0m
+
+  [1mUse of undeclared Var demo.core/SpeechSynthesisUtterance[0m
+
+  [36m38[0m  [36m(defn home-page [][0m
+  [36m39[0m  [36m  [:div.container[0m
+  [36m40[0m  [36m   [:h1 "Web Speech Demo"][0m
+  [36m41[0m  [36m   [:p "This button always works because it calls speechSynthesis.speak() directory"][0m
+  [33m42[0m  [1m   [:button.btn.btn-primary {:on-click #(.speak js/speechSynthesis (SpeechSynthesisUtterance. "Speak now or hold your peace"))}[0m
+  [0m  [0m  [33m                                                                   ^--- Use of undeclared Var demo.core/SpeechSynthesisUtterance[0m
+  [36m43[0m  [36m                            "Speak immediately"]])[0m
+  [36m44[0m  [36m[0m
+  [36m45[0m  [36m(def pages[0m
+  [36m46[0m  [36m  {:home #'home-page[0m
+  [36m47[0m  [36m   :about #'about-page})[0m
+
+[36m----  Compiler Warning : Please see src/cljs/demo/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/demo/core.cljs   line:42  column:68  ----[0m
+
+  [1mUse of undeclared Var demo.core/SpeechSynthesisUtterance[0m
+
+  [36m38[0m  [36m(defn home-page [][0m
+  [36m39[0m  [36m  [:div.container[0m
+  [36m40[0m  [36m   [:h1 "Web Speech Demo"][0m
+  [36m41[0m  [36m   [:p "This button always works because it calls speechSynthesis.speak() directory"][0m
+  [33m42[0m  [1m   [:button.btn.btn-primary {:on-click #(.speak js/speechSynthesis (SpeechSynthesisUtterance. "Speak now or hold your peace"))}[0m
+  [0m  [0m  [33m                                                                   ^--- Use of undeclared Var demo.core/SpeechSynthesisUtterance[0m
+  [36m43[0m  [36m                            "Speak immediately"]])[0m
+  [36m44[0m  [36m[0m
+  [36m45[0m  [36m(def pages[0m
+  [36m46[0m  [36m  {:home #'home-page[0m
+  [36m47[0m  [36m   :about #'about-page})[0m
+
+[36m----  Compiler Warning : Please see src/cljs/demo/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.377 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/demo/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.202 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/demo/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.426 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/demo/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.389 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/demo/events.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.162 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/demo/events.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.184 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/demo/events.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.119 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/demo/events.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.015 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/demo/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.101 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/demo/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.066 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/demo/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.165 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/demo/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 1.149 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/demo/core.js

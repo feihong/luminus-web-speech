@@ -1,6 +1,13 @@
 (ns demo.events
   (:require [demo.db :as db]
-            [re-frame.core :refer [dispatch reg-event-db reg-sub]]))
+            [re-frame.core :refer [dispatch reg-event-db reg-sub reg-fx reg-event-fx]]))
+
+;;effects
+
+(reg-fx
+  :speak
+  (fn [value]
+    (.speak js/speechSynthesis (js/SpeechSynthesisUtterance. value))))
 
 ;;dispatchers
 
@@ -25,6 +32,11 @@
     (.speak js/speechSynthesis
             (js/SpeechSynthesisUtterance. value))
     db))
+
+(reg-event-fx
+  :say-something-properly
+  (fn [cofx [_ value]]
+    {:speak value}))
 
 ;;subscriptions
 
